@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" href="/images/titleImg.png"/>
+	<title>Ana Avila</title>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/index_resp.css">
+	<link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+</head>
+<body>
+	<nav class="nav">
+		<div class="back_arrow">
+			<img class="back_arrow_img" src="/images/back_arrow.png">
+		</div>
+		<div class="menu_icon" onclick="openMenu()">
+			<img class="menu_icon_img" src="/images/menu.png">
+		</div>
+		<div class="menu" id="menu_nav">
+			<div class="menu_close_pic" onclick="closeMenu()">
+				<img class="menu_close_img" src="/images/menu_close.png">
+			</div>
+			<div class="menu_links">
+				<a class="menu_link" href="index.html">Home</a>
+				<a class="menu_link" href="index.html#projects">Projects</a>
+				<a class="menu_link" href="index.html#skills">Skills</a>
+			</div>
+		</div>
+		<div class="nav_item">
+			<a class="nav_link" href="index.html">Home</a>
+		</div>
+		<div class="nav_item">
+			<a class="nav_link" href="#projects">Projects</a>
+		</div>
+		<div class="nav_item">
+			<a class="nav_link" href="#skills">Skills</a>
+		</div>
+	</nav>
+	<header class="header">
+		<div class="hello">
+			<h3 class="hello_txt">Hello World! My name is</h3>
+		</div>
+		<div class="name">
+			<h1 class="name_txt">Ana Avila</h1>
+		</div>
+		<div class="icons">
+			<div class="icon">
+				<a href="https://www.linkedin.com/in/ana03" target="_blank">
+					<img class="icon_img" src="/images/linkedin_icon.png" alt="linkedin icon">
+				</a>
+			</div>
+			<div class="icon">
+				<a href="https://github.com/anaavila" target="_blank">
+					<img class="icon_img" src="/images/github_icon.png" alt="github icon">
+				</a>
+			</div>
+		</div>
+		<div class="buttons">
+			<a class="button_link" href="/html/forgirls.html">
+				<div class="button">
+					<h4 class="button_txt">For Girls in Tech</h4>
+				</div>
+			</a>
+		</div>
+	</header>
+	<main class="main">
+		<section class="sec_projects" id="projects">
+			<div class="sub_header"></div>
+			<div class="sec_title" id="project1_title">
+				<h2 class="sec_title_txt">Projects</h2>
+			</div>
+			<div class="projects">
+				<div class="project" id="project1">
+					<div class="project_name">
+						<h2 class="project_name_txt">AI Matching Cards Game</h2>
+					</div>
+					<div class="project_pic">
+						<img class="project_img" src="/images/project1.png" alt="image1">
+					</div>
+					<div class="project_color">
+						<a class="button_link" href="https://anaavila.github.io/ai-memory-game-js/html/index" target="_blank">
+							<div class="button" id="button_project1">
+								<h4 class="button_txt">View</h4>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="project" id="project2">
+					<div class="project_name">
+						<h2 class="project_name_txt">Text File Format Converter</h2>
+					</div>
+					<div class="project_pic">
+						<img class="project_img" src="/images/project2.png" alt="image2">
+					</div>
+					<div class="project_color">
+						<a class="button_link" href="https://github.com/anaavila/convert-csv-to-arff" target="_blank">
+							<div class="button" id="button_project2">
+								<h4 class="button_txt">View</h4>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sec_skills" id="skills">
+			<div class="sec_title">
+				<h2 class="sec_title_txt">Skills</h2>
+			</div>
+			<div class="skills">
+				<div class="skill_cat">
+					<h2 class="skill_cat_txt">Programming Languages</h2>
+				</div>
+				<div class="skill_descr">
+					<h3 class="skill_descr_txt">Python, Java, SQL,</h3>
+					<h3 class="skill_descr_txt">JavaScript, HTML, CSS</h3>
+				</div>
+				<div class="skill_cat">
+					<h2 class="skill_cat_txt">Design/Editing</h2>
+				</div>
+				<div class="skill_descr">
+					<h3 class="skill_descr_txt">Photoshop, Premier Pro, XD</h3>
+				</div>
+				<div class="skill_cat">
+					<h2 class="skill_cat_txt">Office</h2>
+				</div>
+				<div class="skill_descr">
+					<h3 class="skill_descr_txt">Excel, Word, PowerPoint</h3>
+				</div>
+			</div>
+		</section>
+		<section class="sec_resume" id="resume">
+			<a class="button_link" href="https://drive.google.com/open?id=16wsLf--H-IGoM1aA6HTxrFWkFz26XYXy" target="_blank">
+				<div class="button">
+					<h4 class="button_txt">Resume</h4>
+				</div>
+			</a>
+		</section>
+	</main>
+	<footer class="footer"></footer>
+
+	<script>
+		function openMenu() {
+			document.getElementById("menu_nav").style.width = "200px";
+		}
+
+		function closeMenu() {
+			document.getElementById("menu_nav").style.width = "0";
+		}
+	</script>
+</body>
+</html>

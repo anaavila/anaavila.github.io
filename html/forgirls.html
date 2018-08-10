@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../images/titleImg.png"/>
+	<title>For Girls in Tech</title>
+	<link rel="stylesheet" type="text/css" href="../css/forgirls.css">
+	<link rel="stylesheet" type="text/css" href="../css/forgirls_resp.css">
+	<link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+</head>
+<body>
+	<nav class="nav">
+		<div class="back_arrow">
+			<a href="../index.html">
+				<img class="back_arrow_img" src="../images/back_arrow.png">
+			</a>
+		</div>
+		<div class="menu_icon" onclick="openMenu()">
+			<img class="menu_icon_img" src="../images/menu.png">
+		</div>
+		<div class="menu" id="menu_nav">
+			<div class="menu_close_pic" onclick="closeMenu()">
+				<img class="menu_close_img" src="../images/menu_close.png">
+			</div>
+			<div class="menu_links">
+				<a class="menu_link" href="../index.html">Home</a>
+				<a class="menu_link" href="../index.html#projects">Projects</a>
+				<a class="menu_link" href="../index.html#skills">Skills</a>
+			</div>
+		</div>
+		<div class="nav_item">
+			<a class="nav_link" href="../index.html">Home</a>
+		</div>
+		<div class="nav_item">
+			<a class="nav_link" href="../index.html#projects">Projects</a>
+		</div>
+		<div class="nav_item">
+			<a class="nav_link" href="../index.html#skills">Skills</a>
+		</div>
+	</nav>
+	<header class="header">
+		<div class="for_girls">
+			<h1 class="for_girls_txt">For Girls in Tech</h1>
+		</div>
+		<div class="girls_info">
+			<h2 class="girls_info_txt">Useful information for girls in technology fields</h2>
+		</div>
+	</header>
+	<main class="main">
+		<div class="girls_cat">
+			<div class="cat_name_pic">
+				<a href="https://ghc.anitab.org/" target="_blank">
+					<img class="cat_name_img" src="../images/ghc.png">
+				</a>
+			</div>
+			<div class="cat_name">
+				<a class="cat_name_txt" href="https://ghc.anitab.org/" target="_blank">Grace Hopper Celebration of Women in Computing</a>
+			</div>
+			<div class="cat_descr">
+				<h3 class="cat_descr_txt">The world's largest gathering of women technologists where you can find opportunities such as career fairs, job interviews, listen to keynotes from women technologists, meet other women like you, and more. Visit their website for all the information inlcuding how to get a <a href="https://ghc.anitab.org/2018-student-academic/scholarships/" target="_blank" style="color: #E87AC0; font-weight: 500;">scholarship</a> to attend this conference.</h3>
+				<h3 class="cat_descr_txt"><span style="color: #3EAEF5; font-weight: 500;">#GHC2018</span> September 26 - September 28 in Houston, Texas.</h3>
+			</div>
+		</div>
+		<div class="girls_cat">
+			<div class="cat_name_pic">
+				<a href="https://girlswhocode.com/" target="_blank">
+					<img class="cat_name_img" src="../images/gwc.png">
+				</a>
+			</div>
+			<div class="cat_name">
+				<a class="cat_name_txt" href="https://girlswhocode.com/" target="_blank">Girls Who Code</a>
+			</div>
+			<div class="cat_descr">
+				<h3 class="cat_descr_txt">Organization founded with the mission to close the gender gap in technology. You can find free summer programs, and after-school clubs for teen girls. Visit their website for more information and locations near you.</h3>
+			</div>
+		</div>
+	</main>
+	<footer class="footer"></footer>
+
+	<script>
+		function openMenu() {
+			document.getElementById("menu_nav").style.width = "200px";
+		}
+
+		function closeMenu() {
+			document.getElementById("menu_nav").style.width = "0";
+		}
+	</script>
+</body>
+</html>

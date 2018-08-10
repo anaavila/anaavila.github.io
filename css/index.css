@@ -1,0 +1,329 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #FAFAFA;
+}
+
+/*
+ *
+ *		Nav - Menu
+ *
+*/
+
+.menu {
+	width: 0;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #E2FBFB;
+	transition: 0.5s;
+	box-shadow: 0px 0px 18px #B1B1B1;
+}
+
+.menu_close_pic {
+	padding: 20px;
+}
+
+.menu_link {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #707070;
+	margin-bottom: 25px;
+	transition: 0.3s;
+}
+
+.menu_link:hover {
+	color: #E87AC0;
+}
+
+.menu_close_img {
+	width: 30px;
+	opacity: 0.7;
+}
+
+.menu_close_img:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+/*
+ *
+ *		Nav
+ *
+*/
+
+.back_arrow, .menu_icon {
+	padding: 18px;
+}
+
+.menu_icon {
+	position: absolute;
+	right: 0;
+}
+
+.back_arrow {
+	display: none;
+}
+
+.back_arrow_img, .menu_icon_img {
+	width: 30px;
+	opacity: 0.7;
+}
+
+.menu_icon_img:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.nav {
+ 	display: inline-block;
+ 	position: sticky;
+ 	top: 0;
+ 	z-index: 1;
+ 	width: 100%;
+ 	height: 70px;
+ 	text-align: right;
+ 	background-color: #E2FBFB;
+ }
+
+.nav_item {
+	display: inline-block;
+}
+
+.nav_link {
+	display: none;
+}
+
+/*
+ *
+ *		Header
+ *
+*/
+
+.header {
+	width: 100%;
+	height: 100%;
+	padding-top: 50px;
+	padding-bottom: 0px;
+	background-color: #E2FBFB;
+}
+
+.hello, .name {
+	text-align: center;
+}
+
+.hello_txt {
+	margin: 0;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 100;
+	font-size: 17px;
+	color: #707070;
+}
+
+.name_txt {
+	margin: 0;
+	font-family: 'Rancho', cursive;
+	font-weight: 400;
+	font-size: 85px;
+	color: #707070;
+}
+
+.icons {
+	text-align: center;
+}
+
+.icon {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+
+.icon_img {
+	display: inline-block;
+	width: 40px;
+	opacity: 0.6;
+}
+
+.icon_img:hover {
+	opacity: 0.3;
+}
+
+.buttons {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.button_link {
+	text-decoration: none;
+}
+
+.button {
+	display: inline-block;
+	width: 180px;
+	margin: auto;
+	vertical-align: middle;
+	background-color: #E87AC0;
+	border-radius: 5px;
+	box-shadow: 0px 0px 18px #B1B1B1;
+}
+
+.button:hover {
+	box-shadow: 0px 0px 8px #B1B1B1;
+}
+
+.button_txt {
+	margin: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+/*
+ *
+ *		Main
+ *
+*/
+
+/*
+ *		Sections
+*/
+
+.sec_title {
+	text-align: center;
+}
+
+.sec_title_txt {
+	margin-top: 0px;
+	margin-bottom: 50px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #44B4B4;
+}
+
+/*
+ *		Section - Projects
+*/
+
+.sub_header {
+	width: 100%;
+	height: 50px;
+	background-color: #E2FBFB;
+}
+
+#project1_title {
+	padding-top: 40px;
+}
+
+#skills {
+	padding-top: 90px;
+}
+
+.projects {
+	text-align: center;
+}
+
+#project1 {
+	margin-bottom: 50px;
+}
+
+.project {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	border-radius: 8px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 10px #B1B1B1;
+}
+
+.project_img {
+	width: 150px;
+}
+
+.project_name_txt {
+	margin-top: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 17px;
+	color: #707070;
+}
+
+.project_color {
+	height: 90px;
+	margin-top: 18px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background-color: #E2FBFB;
+}
+
+#button_project1, #button_project2 {
+	margin-top: 24px;
+}
+
+/*
+ *		Section - Skills
+*/
+
+.skills {
+	text-align: center;
+}
+
+.skill_cat {
+	margin-top: 18px;
+}
+
+.skill_descr {
+	margin-bottom: 40px;
+}
+
+.skill_cat_txt {
+	margin: 8px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	color: #707070;
+}
+
+.skill_descr_txt {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 17px;
+	color: #707070;
+}
+
+/*
+ *		Section - Resume
+*/
+
+.sec_resume {
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+/*
+ *
+ *		Footer
+ *
+*/
+
+.footer {
+	height: 100px;
+	background-color: #E2FBFB;
+}
