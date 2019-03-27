@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" href="../icons/titleImg.png"/>
+	<title>Photography</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/photography.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+</head>
+<body onclick="toggle_close()">
+	<nav class="nav">
+		<div class="menu_icon" id="menu_icon_open" onclick="openMenu()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="black">    
+				<path d="M0 0h24v24H0z" fill="none"/>    
+				<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+			</svg>
+		</div>
+		<div class="menu" id="menu_nav">
+			<div class="menu_close_pic">
+				<svg onclick="closeMenu()" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="black">    
+					<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>    
+					<path d="M0 0h24v24H0z" fill="none"/>
+				</svg>
+			</div>
+			<div class="menu_links">
+				<a class="menu_link" id="home" href="../index.html">Home</a>
+				<a class="menu_link" id="home" href="experience.html">Experience</a>
+				<a class="menu_link" id="home" href="designs.html">Designs</a>
+				<a class="menu_link" id="home" href="photography.html" style="color: #4F98AE;">Photography</a>
+				<!-- <a class="menu_link" id="home" href="https://github.com/anaavila">Code - GitHub</a> -->
+			</div>
+		</div>
+		<div class="nav_items">
+			<div class="nav_item">
+				<a class="nav_link" id="home" href="../index.html">Home</a>
+				<a class="nav_link" id="home" href="experience.html">Experience</a>
+				<a class="nav_link" id="home" href="designs.html">Designs</a>
+				<a class="nav_link" id="home" href="photography.html" style="color: #4F98AE;">Photography</a>
+				<!-- <a class="nav_link" id="home" href="https://github.com/anaavila">Code - GitHub</a> -->
+			</div>
+		</div>
+	</nav>
+
+	<main class="main">
+		<div class="title_polaroid">
+			<h3>Photography</h3>
+		</div>
+		<div class="all_pictures" style="text-align: center;">
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-1.jpg">
+				<p class="pic_descr">Hummingbird</p>
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-2.jpg">
+				<p class="pic_descr">Colorful<br>H u m m i n g b i r d !</p>
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-3.jpg">
+				<p class="pic_descr">Colibri!</p>
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-4.jpg">
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-5.jpg">
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-6.jpg">
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-7.jpg">
+				<p class="pic_descr">Spring</p>
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-8.jpg">
+				<p class="pic_descr">Pineapples</p>
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-9.jpg">
+				<p class="pic_descr">Eiffel Tower</p>
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-10.jpg">
+				<p class="pic_descr">Cactus</p>
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-11.jpg">
+				<p class="pic_descr">Rosa</p>
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-12.jpg">
+				<p class="pic_descr">Sunset Train</p>
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-13.jpg">
+				<p class="pic_descr">Cactuces</p>
+			</div>
+			<div class="pic_canvas">
+				<img class="album_img" src="../photography/picture-14.jpg">
+				<p class="pic_descr">Flower Cactus</p>
+			</div>
+		</div>
+	</main>
+
+	<script>
+		function openMenu() {
+			document.getElementById("menu_nav").style.width = "200px";
+		}
+		function toggle_close() {
+			if (event.clientX < (window.innerWidth - 200)) {
+				closeMenu();
+			}
+		}
+		function closeMenu() {
+			document.getElementById("menu_nav").style.width = "0px";
+		}
+	</script>
+</body>
+</html>
