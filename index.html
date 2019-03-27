@@ -3,138 +3,116 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="shortcut icon" href="/images/titleImg.png"/>
+	<link rel="shortcut icon" href="icons/titleImg.png"/>
 	<title>Ana Avila</title>
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
-	<link rel="stylesheet" type="text/css" href="/css/index_resp.css">
-	<link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
 </head>
-<body>
-	<nav class="nav">
-		<div class="back_arrow">
-			<img class="back_arrow_img" src="/images/back_arrow.png">
-		</div>
-		<div class="menu_icon" onclick="openMenu()">
-			<img class="menu_icon_img" src="/images/menu.png">
+<body onclick="toggle_close()">
+		<nav class="nav">
+		<div class="menu_icon" id="menu_icon_open" onclick="openMenu()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="black">    
+				<path d="M0 0h24v24H0z" fill="none"/>    
+				<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+			</svg>
 		</div>
 		<div class="menu" id="menu_nav">
-			<div class="menu_close_pic" onclick="closeMenu()">
-				<img class="menu_close_img" src="/images/menu_close.png">
+			<div class="menu_close_pic">
+				<svg onclick="closeMenu()" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="black">    
+					<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>    
+					<path d="M0 0h24v24H0z" fill="none"/>
+				</svg>
 			</div>
 			<div class="menu_links">
-				<a class="menu_link" href="index.html">Home</a>
-				<a class="menu_link" href="index.html#projects">Projects</a>
-				<a class="menu_link" href="index.html#skills">Skills</a>
+				<a class="menu_link" id="home" href="index.html" style="color: #4F98AE;">Home</a>
+				<a class="menu_link" id="home" href="html/experience.html">Experience</a>
+				<a class="menu_link" id="home" href="html/designs.html">Designs</a>
+				<a class="menu_link" id="home" href="html/photography.html">Photography</a>
+				<!-- <a class="menu_link" id="home" href="https://github.com/anaavila">Code - GitHub</a> -->
 			</div>
 		</div>
-		<div class="nav_item">
-			<a class="nav_link" href="index.html">Home</a>
-		</div>
-		<div class="nav_item">
-			<a class="nav_link" href="#projects">Projects</a>
-		</div>
-		<div class="nav_item">
-			<a class="nav_link" href="#skills">Skills</a>
+		<div class="nav_items">
+			<div class="nav_item">
+				<!-- <a class="nav_link" id="home" href="index.html" style="color: #4F98AE;">Home</a> -->
+				<a class="nav_link" id="home" href="html/experience.html">Experience</a>
+				<a class="nav_link" id="home" href="html/designs.html">Designs</a>
+				<a class="nav_link" id="home" href="html/photography.html">Photography</a>
+				<!-- <a class="nav_link" id="home" href="https://github.com/anaavila">Code - GitHub</a> -->
+			</div>
 		</div>
 	</nav>
 	<header class="header">
-		<div class="hello">
-			<h3 class="hello_txt">Hello World! My name is</h3>
+		<div class="main_info">
+			<h4 class="title_sub4_txt">Hello World! My name is</h4>
+			<h1 class="title_main_txt">Ana Avila</h1>
+			<h3 class="title_sub3_txt">Front-End Web Developer</h3>
 		</div>
-		<div class="name">
-			<h1 class="name_txt">Ana Avila</h1>
-		</div>
-		<div class="icons">
-			<div class="icon">
-				<a href="https://www.linkedin.com/in/ana03" target="_blank">
-					<img class="icon_img" src="/images/linkedin_icon.png" alt="linkedin icon">
+		<div class="cont_icon_to">
+			<div class="icon_to">
+				<a href="https://www.linkedin.com/in/ana" class="sub_nav_link">
+					<img src="icons/linkedin_icon.png" style="width: 30px;">
 				</a>
 			</div>
-			<div class="icon">
-				<a href="https://github.com/anaavila" target="_blank">
-					<img class="icon_img" src="/images/github_icon.png" alt="github icon">
+			<div class="icon_to">
+				<a href="https://github.com/anaavila" class="sub_nav_link">
+					<img src="icons/github_icon.png" style="width: 30px;">
 				</a>
 			</div>
 		</div>
-		<div class="buttons">
-			<a class="button_link" href="/html/forgirls.html">
-				<div class="button">
-					<h4 class="button_txt">For Girls in Tech</h4>
-				</div>
-			</a>
+		<div class="button">
+			<a href="html/experience.html" class="button_link">Skills & Experience</a>
 		</div>
 	</header>
 	<main class="main">
-		<section class="sec_projects" id="projects">
-			<div class="sub_header"></div>
-			<div class="sec_title" id="project1_title">
-				<h2 class="sec_title_txt">Projects</h2>
-			</div>
-			<div class="projects">
-				<div class="project" id="project1">
-					<div class="project_name">
-						<h2 class="project_name_txt">AI Matching Cards Game</h2>
-					</div>
-					<div class="project_pic">
-						<img class="project_img" src="/images/project1.png" alt="image1">
-					</div>
-					<div class="project_color">
-						<a class="button_link" href="https://anaavila.github.io/ai-memory-game-js/html/index" target="_blank">
-							<div class="button" id="button_project1">
-								<h4 class="button_txt">View</h4>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="project" id="project2">
-					<div class="project_name">
-						<h2 class="project_name_txt">Text File Format Converter</h2>
-					</div>
-					<div class="project_pic">
-						<img class="project_img" src="/images/project2.png" alt="image2">
-					</div>
-					<div class="project_color">
-						<a class="button_link" href="https://github.com/anaavila/convert-csv-to-arff" target="_blank">
-							<div class="button" id="button_project2">
-								<h4 class="button_txt">View</h4>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="sec_skills" id="skills">
+		<section class="work_sec">
 			<div class="sec_title">
-				<h2 class="sec_title_txt">Skills</h2>
+				<h3 class="sec_title_txt">Portfolio</h3>
 			</div>
-			<div class="skills">
-				<div class="skill_cat">
-					<h2 class="skill_cat_txt">Programming Languages</h2>
+			<div class="work_cont">
+				<div class="work_cat">
+					<a href="html/designs.html" class="work_cat_link">
+						<img src="images/home/designs.png" class="work_cat_img" alt="work_cat_img">
+					</a>
 				</div>
-				<div class="skill_descr">
-					<h3 class="skill_descr_txt">Python, Java, SQL,</h3>
-					<h3 class="skill_descr_txt">JavaScript, HTML, CSS</h3>
+				<div class="work_cat">
+					<a href="https://github.com/anaavila" class="work_cat_link">
+						<img src="images/home/code.png" class="work_cat_img" alt="work_cat_img">
+					</a>
 				</div>
-				<div class="skill_cat">
-					<h2 class="skill_cat_txt">Design/Editing</h2>
+				<div class="work_cat">
+					<a href="html/photography.html" class="work_cat_link">
+						<img src="images/home/photography.png" class="work_cat_img" alt="work_cat_img">
+					</a>
 				</div>
-				<div class="skill_descr">
-					<h3 class="skill_descr_txt">Photoshop, Premier Pro, Adobe XD</h3>
+				<div class="work_cat">
+					<a href="https://anaavila.github.io/ai-memory-game-js/html/index" target="_blank" class="work_cat_link">
+						<img src="images/home/memorygame.png" class="work_cat_img" alt="work_cat_img">
+					</a>
 				</div>
 			</div>
 		</section>
+		<!-- <section class="about_sec">
+			<div class="sec_title">
+				<h3 class="sec_title_txt">About</h3>
+			</div>
+			<div class="p_descr">
+				<p class="p_descr_txt"></p>
+			</div>
+		</section> -->
 	</main>
-	<footer class="footer"></footer>
-
 	<script>
 		function openMenu() {
 			document.getElementById("menu_nav").style.width = "200px";
 		}
-
+		function toggle_close() {
+			if (event.clientX < (window.innerWidth - 200)) {
+				closeMenu();
+			}
+		}
 		function closeMenu() {
-			document.getElementById("menu_nav").style.width = "0";
+			document.getElementById("menu_nav").style.width = "0px";
 		}
 	</script>
 </body>
